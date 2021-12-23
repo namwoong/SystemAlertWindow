@@ -209,7 +209,7 @@ public class WindowService extends JobIntentService implements View.OnTouchListe
     private void buildWindowView(LinearLayout.LayoutParams params, boolean enableDraggable) {
         windowView = new LinearLayout(mContext);
         windowView.setOrientation(LinearLayout.VERTICAL);
-        windowView.setBackgroundColor(Color.WHITE);
+        windowView.setBackgroundColor(Color.TRANSPARENT);
         windowView.setLayoutParams(params);
         windowView.removeAllViews();
         windowView.addView(headerView);

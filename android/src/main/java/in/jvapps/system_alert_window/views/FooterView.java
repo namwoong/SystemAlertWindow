@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.graphics.Color;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +41,8 @@ public class FooterView {
         if (decoration != null) {
             GradientDrawable gd = UiBuilder.getGradientDrawable(decoration);
             linearLayout.setBackground(gd);
+        } else {
+            linearLayout.setBackgroundColor(Color.TRANSPARENT);
         }
         if ((boolean) footerMap.get(KEY_IS_SHOW_FOOTER)) {
             Map<String, Object> textMap = Commons.getMapFromObject(footerMap, KEY_TEXT);

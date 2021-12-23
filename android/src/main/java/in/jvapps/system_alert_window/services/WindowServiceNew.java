@@ -79,7 +79,7 @@ public class WindowServiceNew extends Service implements View.OnTouchListener {
         PendingIntent pendingIntent = PendingIntent.getActivity(this,
                 0, notificationIntent, 0);
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("Overlay window service is running")
+                .setContentTitle("GRAB TAGS is running")
                 .setSmallIcon(R.drawable.ic_desktop_windows_black_24dp)
                 .setContentIntent(pendingIntent)
                 .build();
@@ -174,7 +174,7 @@ public class WindowServiceNew extends Service implements View.OnTouchListener {
             windowView = new LinearLayout(mContext);
         }
         windowView.setOrientation(LinearLayout.VERTICAL);
-        windowView.setBackgroundColor(Color.WHITE);
+        windowView.setBackgroundColor(Color.TRANSPARENT);
         windowView.setLayoutParams(params);
         windowView.removeAllViews();
         windowView.addView(headerView);

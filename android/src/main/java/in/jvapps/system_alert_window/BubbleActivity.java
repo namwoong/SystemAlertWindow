@@ -52,7 +52,7 @@ public class BubbleActivity extends AppCompatActivity {
         LinearLayout bodyView = new BodyView(mContext, bodyMap).getView();
         LinearLayout footerView = new FooterView(mContext, footerMap).getView();
 
-        bubbleLayout.setBackgroundColor(Color.WHITE);
+        bubbleLayout.setBackgroundColor(Color.TRANSPARENT);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                 FrameLayout.LayoutParams.WRAP_CONTENT);
         bubbleLayout.setLayoutParams(params);

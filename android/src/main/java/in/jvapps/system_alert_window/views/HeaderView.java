@@ -38,7 +38,7 @@ public class HeaderView {
             GradientDrawable gd = UiBuilder.getGradientDrawable(decoration);
             relativeLayout.setBackground(gd);
         } else {
-            relativeLayout.setBackgroundColor(Color.WHITE);
+            relativeLayout.setBackgroundColor(Color.TRANSPARENT);
         }
         Map<String, Object> titleMap = Commons.getMapFromObject(headerMap, KEY_TITLE);
         Map<String, Object> subTitleMap = Commons.getMapFromObject(headerMap, KEY_SUBTITLE);
@@ -73,7 +73,7 @@ public class HeaderView {
             GradientDrawable gd = UiBuilder.getGradientDrawable(decoration);
             linearLayout.setBackground(gd);
         } else {
-            linearLayout.setBackgroundColor(Color.WHITE);
+            linearLayout.setBackgroundColor(Color.TRANSPARENT);
         }
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         Map<String, Object> titleMap = Commons.getMapFromObject(headerMap, KEY_TITLE);
